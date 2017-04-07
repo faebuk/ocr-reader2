@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/progressBarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="#000000">
+
+        <ProgressBar
+            android:id="@+id/progessBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+    <EditText
+        android:id="@+id/codeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Code"
+        android:inputType="text"
+        android:maxLength="10"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/submitForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Einlösen" />
+</LinearLayout>
